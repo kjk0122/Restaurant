@@ -19,7 +19,7 @@ public class Member {
     private String memberName;
 
     @OneToMany(mappedBy = "member", fetch = FetchType.EAGER)
-    private List<Order> order = new ArrayList<>();
+    private List<Orders> orders = new ArrayList<>();
 
     public Member(String memberName) {
         this.memberName = memberName;

@@ -21,7 +21,7 @@ public class Food {
     private int price;
 
     @OneToMany(mappedBy = "food", fetch = FetchType.EAGER)
-    private List<Order> order = new ArrayList<>();
+    private List<Orders> orders = new ArrayList<>();
 
     public Food(String foodName, int price) {
         this.foodName = foodName;

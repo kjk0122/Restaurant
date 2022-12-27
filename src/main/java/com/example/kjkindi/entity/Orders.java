@@ -8,7 +8,7 @@ import javax.persistence.*;
 @Getter
 @Entity
 @NoArgsConstructor
-public class Order {
+public class Orders {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -21,7 +21,7 @@ public class Order {
     @JoinColumn(name="member_id")
     private Member member;
 
-    public Order(Food food, Member member) {
+    public Orders(Food food, Member member) {
         this.food = food;
         this.member = member;
     }
